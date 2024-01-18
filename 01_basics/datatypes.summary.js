@@ -37,3 +37,36 @@ console.log(typeof myFunction);  //function
 console.log(typeof myObj);       //object
 console.log(typeof fruits);      //object
 
+//************************************************************************* 
+
+//Stack Memory (Primitive)
+
+let myYoutubename = "Zuhaina"
+let anotherName = myYoutubename
+anotherName = "Kathija"
+
+console.log(anotherName);
+console.log(myYoutubename); 
+
+//In Stack Memory, original value doesn't change, it gives a copy to the new value so, original value remains same
+
+//*************************************************************** 
+
+//Heap Memory (Non-Primitive)
+
+
+let userOne = {
+    email: "user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "zuhaina@google.com" //using dot changing email 
+
+console.log(userOne.email);  
+console.log(userTwo.email);
+
+//In Heap Memory, original value changes, it gives a reference to the new value so, original value and the new value both gets changed
+
+
